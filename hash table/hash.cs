@@ -37,6 +37,18 @@ namespace hash_table
                 }
             }
         }
+        public void Remove(string name)
+        {
+            tableofHash[Search(name),0] = null;
+            tableofHash[Search(name), 1] = null;
+
+        }
+        public int Search(string name)
+        {
+            int place = 0;
+
+            return place;
+        }
        public void Print()
         {
             for (int i = 0; i < 10; i++)

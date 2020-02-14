@@ -18,15 +18,22 @@ namespace hash_table
                 Console.WriteLine("age:  ");
             age = Console.ReadLine();
             table.AddToTable(name,age);
-                Console.WriteLine("add or print");
+                Tag:
+                Console.WriteLine("add or print or remove");
                 string answer = Console.ReadLine();
                 if(answer.ToLower() == "add")
                 {
 
                 }
-                else
+                else if(answer.ToLower()== "print")
                 {
                     continued = false;
+                }else if(answer.ToLower()== "remove")
+                {
+                    Console.WriteLine("name to remove");
+                    name = Console.ReadLine();
+                    table.Remove(name);
+                    goto Tag;
                 }
 
             } 
